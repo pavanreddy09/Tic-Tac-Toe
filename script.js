@@ -39,6 +39,13 @@ function isvalidclick(box) {
 
 function clicked(box, index) {
     if(isvalidclick(box) && isgameactive) {
+        if(current_player === 'X') {
+            const sound = new Audio('sounds/Waterdrop.mp3');
+            sound.play();
+        } else {
+            const sound = new Audio('sounds/Rain Drop Sms Tone.mp3');
+            sound.play();
+        }
         box.innerText=current_player;
         box.classList.add(`player${current_player}`);
         updateboard(index);
