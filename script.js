@@ -30,6 +30,7 @@ boxes.forEach((box , index) => {
 
 function isvalidclick(box) {
     if(box.innerText === 'X' || box.innerText == 'O') {
+        alert("Invalid Move");
         return false;
     }  else {
         return true;
