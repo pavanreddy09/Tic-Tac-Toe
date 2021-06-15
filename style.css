@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    height: 97%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,rgba(128, 128, 128, 0.733),rgb(41, 35, 35),black);
+    color: whitesmoke;
+}
+.container {
+    width: 15rem;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem;
+}
+.box {
+  
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+    border: none;
+    min-height: 3rem;
+    width: 7rem;
+    background-color: red;
+    margin: 1rem;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.heading {
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+}
+.playerX {
+    color: green;
+}
+.playerO {
+    color: red;
+}
+.hide {
+    display: none;
+}
